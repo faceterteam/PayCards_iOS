@@ -75,6 +75,7 @@ class RecognizerViewController: UIViewController, PayCardsRecognizerPlatformDele
         print(result)
         print(result.dictionary as NSDictionary)
         
+        
         if result.isCompleted {
             performSegue(withIdentifier: "CardDetailsViewController", sender: result)
         } else {
