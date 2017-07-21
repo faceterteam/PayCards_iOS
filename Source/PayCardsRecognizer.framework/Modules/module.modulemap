@@ -1,0 +1,6 @@
+framework module PayCardsRecognizer {
+  umbrella header "PayCardsRecognizer.h"
+
+  export *
+  module * { export * }
+}
