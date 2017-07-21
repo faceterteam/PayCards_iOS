@@ -10,8 +10,5 @@ Pod::Spec.new do |spec|
   spec.platform         = :ios, '8.0'
   spec.ios.deployment_target = '8.0'
   spec.requires_arc     = true
-#  spec.source_files     = ''
-#  spec.frameworks       = 'Accelerate', 'AVFoundation', 'AudioToolbox', 'CoreMedia', 'CoreVideo', 'MobileCoreServices', 'OpenGLES', 'QuartzCore', 'Security', 'UIKit'
-#  spec.libraries        = 'c++'
   spec.vendored_frameworks = 'Source/PayCardsRecognizer.framework'
 end
