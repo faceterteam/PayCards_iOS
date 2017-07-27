@@ -1,7 +1,7 @@
 PAY.CARDS RECOGNIZER
 ===================
 
-[Source Code](https://github.com/faceterteam/PayCards_iOS_Source)
+Source Code: [iOS](https://github.com/faceterteam/PayCardsRecognizer_iOS_Source), [C++](https://github.com/faceterteam/PayCards_Source)
 
 [iOS SDK](https://github.com/faceterteam/PayCards_iOS)
 
