@@ -352,6 +352,9 @@ or stored on device</string>
                                         <rect key="frame" x="0.0" y="207" width="208" height="44"/>
                                         <state key="normal" image="DownloadButton"/>
                                         <state key="highlighted" image="DownloadButtonHightlighted"/>
+                                        <connections>
+                                            <action selector="openSDKWithSender:" destination="kyZ-5G-Lkz" eventType="touchUpInside" id="onr-Q6-Fsf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -370,20 +373,12 @@ or stored on device</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6t-LY-6Pc">
-                                <rect key="frame" x="131" y="531" width="58" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="LICENCE"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZCc-U1-dNA" firstAttribute="centerY" secondItem="BpN-nk-asX" secondAttribute="centerY" id="4T0-OY-zl9"/>
-                            <constraint firstAttribute="bottom" secondItem="a6t-LY-6Pc" secondAttribute="bottom" constant="8" id="CPH-fr-1Vq"/>
                             <constraint firstItem="sgr-aR-KOL" firstAttribute="top" secondItem="4qT-yw-5Up" secondAttribute="bottom" constant="15" id="FSr-Rj-eNG"/>
                             <constraint firstItem="ZCc-U1-dNA" firstAttribute="centerX" secondItem="BpN-nk-asX" secondAttribute="centerX" id="rKv-FL-EX2"/>
-                            <constraint firstItem="a6t-LY-6Pc" firstAttribute="centerX" secondItem="BpN-nk-asX" secondAttribute="centerX" id="sgH-4d-pMP"/>
                             <constraint firstItem="sgr-aR-KOL" firstAttribute="centerX" secondItem="BpN-nk-asX" secondAttribute="centerX" id="wQt-hJ-ENq"/>
                         </constraints>
                     </view>
