@@ -342,43 +342,28 @@ or stored on device</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCc-U1-dNA">
-                                <rect key="frame" x="56" y="158.5" width="208" height="251"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="github" translatesAutoresizingMaskIntoConstraints="NO" id="DtN-hM-MHp">
-                                        <rect key="frame" x="-5" y="0.0" width="218" height="187"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAH-cP-Bma">
-                                        <rect key="frame" x="0.0" y="207" width="208" height="44"/>
-                                        <state key="normal" image="DownloadButton"/>
-                                        <state key="highlighted" image="DownloadButtonHightlighted"/>
-                                        <connections>
-                                            <action selector="openSDKWithSender:" destination="kyZ-5G-Lkz" eventType="touchUpInside" id="onr-Q6-Fsf"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="DtN-hM-MHp" firstAttribute="centerX" secondItem="ZCc-U1-dNA" secondAttribute="centerX" id="471-IM-2Zf"/>
-                                    <constraint firstItem="GAH-cP-Bma" firstAttribute="top" secondItem="DtN-hM-MHp" secondAttribute="bottom" constant="20" id="DfP-4f-SPN"/>
-                                    <constraint firstItem="DtN-hM-MHp" firstAttribute="top" secondItem="ZCc-U1-dNA" secondAttribute="top" id="RFB-p0-oQz"/>
-                                    <constraint firstItem="GAH-cP-Bma" firstAttribute="leading" secondItem="ZCc-U1-dNA" secondAttribute="leading" id="f6J-8t-rdo"/>
-                                    <constraint firstAttribute="bottom" secondItem="GAH-cP-Bma" secondAttribute="bottom" id="fUg-6T-N1F"/>
-                                    <constraint firstAttribute="trailing" secondItem="GAH-cP-Bma" secondAttribute="trailing" id="nM6-C7-pGP"/>
-                                </constraints>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Right!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgr-aR-KOL">
-                                <rect key="frame" x="94" y="79" width="132" height="42"/>
+                                <rect key="frame" x="94" y="263" width="132" height="42"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8q-Ia-xfM">
+                                <rect key="frame" x="94" y="325" width="132" height="223"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="8" maxX="15" maxY="8"/>
+                                <state key="normal" title="GET iOS SDK"/>
+                                <connections>
+                                    <action selector="openSDKWithSender:" destination="kyZ-5G-Lkz" eventType="touchUpInside" id="Tzi-hw-9IY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZCc-U1-dNA" firstAttribute="centerY" secondItem="BpN-nk-asX" secondAttribute="centerY" id="4T0-OY-zl9"/>
-                            <constraint firstItem="sgr-aR-KOL" firstAttribute="top" secondItem="4qT-yw-5Up" secondAttribute="bottom" constant="15" id="FSr-Rj-eNG"/>
-                            <constraint firstItem="ZCc-U1-dNA" firstAttribute="centerX" secondItem="BpN-nk-asX" secondAttribute="centerX" id="rKv-FL-EX2"/>
+                            <constraint firstItem="V8q-Ia-xfM" firstAttribute="centerX" secondItem="BpN-nk-asX" secondAttribute="centerX" id="2W7-ZZ-zIE"/>
+                            <constraint firstItem="rRp-JN-aGi" firstAttribute="top" secondItem="V8q-Ia-xfM" secondAttribute="bottom" constant="20" id="Akz-0q-CLY"/>
+                            <constraint firstItem="sgr-aR-KOL" firstAttribute="centerY" secondItem="BpN-nk-asX" secondAttribute="centerY" id="JWq-W1-Ntf"/>
+                            <constraint firstItem="V8q-Ia-xfM" firstAttribute="top" secondItem="sgr-aR-KOL" secondAttribute="bottom" constant="20" id="cir-8l-VKN"/>
                             <constraint firstItem="sgr-aR-KOL" firstAttribute="centerX" secondItem="BpN-nk-asX" secondAttribute="centerX" id="wQt-hJ-ENq"/>
                         </constraints>
                     </view>
@@ -515,10 +500,7 @@ or stored on device</string>
         </scene>
     </scenes>
     <resources>
-        <image name="DownloadButton" width="208" height="44"/>
-        <image name="DownloadButtonHightlighted" width="208" height="44"/>
         <image name="Transparent" width="30" height="30"/>
-        <image name="github" width="218" height="187"/>
         <image name="iPhoneWithCard" width="154" height="313"/>
     </resources>
 </document>
