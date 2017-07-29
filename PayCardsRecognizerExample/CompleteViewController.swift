@@ -17,7 +17,7 @@ class CompleteViewController: UIViewController {
     }
     
     @IBAction func openSDK(sender: AnyObject) {
-        let url = URL(string: "https://github.com/faceterteam/PayCardsRecognizer_iOS")!
+        let url = URL(string: "https://github.com/faceterteam/PayCards_iOS")!
         UIApplication.shared.openURL(url)
     }
 
