@@ -14,18 +14,18 @@
 		795F0B921F2256AA00FB95D9 /* CardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795F0B8F1F2256AA00FB95D9 /* CardDetailsViewController.swift */; };
 		795F0B931F2256AA00FB95D9 /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795F0B901F2256AA00FB95D9 /* CompleteViewController.swift */; };
 		795F0B941F2256AA00FB95D9 /* RecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795F0B911F2256AA00FB95D9 /* RecognizerViewController.swift */; };
-		795F0B971F2256C200FB95D9 /* PayCardsRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795F0B951F2256BC00FB95D9 /* PayCardsRecognizer.framework */; };
-		795F0B981F2256C200FB95D9 /* PayCardsRecognizer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 795F0B951F2256BC00FB95D9 /* PayCardsRecognizer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7992FA251FB333870064A8C4 /* PayCardsRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7992FA201FB3336B0064A8C4 /* PayCardsRecognizer.framework */; };
+		7992FA261FB333870064A8C4 /* PayCardsRecognizer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7992FA201FB3336B0064A8C4 /* PayCardsRecognizer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		795F0B991F2256C200FB95D9 /* Embed Frameworks */ = {
+		7992FA271FB333870064A8C4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				795F0B981F2256C200FB95D9 /* PayCardsRecognizer.framework in Embed Frameworks */,
+				7992FA261FB333870064A8C4 /* PayCardsRecognizer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,7 +42,7 @@
 		795F0B8F1F2256AA00FB95D9 /* CardDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailsViewController.swift; sourceTree = "<group>"; };
 		795F0B901F2256AA00FB95D9 /* CompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
 		795F0B911F2256AA00FB95D9 /* RecognizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognizerViewController.swift; sourceTree = "<group>"; };
-		795F0B951F2256BC00FB95D9 /* PayCardsRecognizer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayCardsRecognizer.framework; path = Source/PayCardsRecognizer.framework; sourceTree = "<group>"; };
+		7992FA201FB3336B0064A8C4 /* PayCardsRecognizer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayCardsRecognizer.framework; path = Source/PayCardsRecognizer.framework; sourceTree = "<group>"; };
 		79972EB11FB322030069ADF3 /* PayCardsRecognizer.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = PayCardsRecognizer.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				795F0B971F2256C200FB95D9 /* PayCardsRecognizer.framework in Frameworks */,
+				7992FA251FB333870064A8C4 /* PayCardsRecognizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +64,7 @@
 				79972EB11FB322030069ADF3 /* PayCardsRecognizer.podspec */,
 				795F0B7C1F2255F700FB95D9 /* PayCardsRecognizerExample */,
 				795F0B7B1F2255F700FB95D9 /* Products */,
-				795F0B951F2256BC00FB95D9 /* PayCardsRecognizer.framework */,
+				7992FA201FB3336B0064A8C4 /* PayCardsRecognizer.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,10 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 795F0B8C1F2255F700FB95D9 /* Build configuration list for PBXNativeTarget "PayCardsRecognizerExample" */;
 			buildPhases = (
+				7992FA281FB333C60064A8C4 /* Autoincrement build number */,
 				795F0B761F2255F700FB95D9 /* Sources */,
 				795F0B771F2255F700FB95D9 /* Frameworks */,
 				795F0B781F2255F700FB95D9 /* Resources */,
-				795F0B991F2256C200FB95D9 /* Embed Frameworks */,
+				7992FA271FB333870064A8C4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +161,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7992FA281FB333C60064A8C4 /* Autoincrement build number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Autoincrement build number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nreleaseConfig=\"Release\"\nif [ \"$releaseConfig\" = \"${CONFIGURATION}\" ]; then\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		795F0B761F2255F700FB95D9 /* Sources */ = {
@@ -307,7 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7F9FM9B29E;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Source",
@@ -328,7 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7F9FM9B29E;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Source",
