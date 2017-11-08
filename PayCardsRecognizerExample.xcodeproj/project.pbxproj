@@ -43,6 +43,7 @@
 		795F0B901F2256AA00FB95D9 /* CompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
 		795F0B911F2256AA00FB95D9 /* RecognizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognizerViewController.swift; sourceTree = "<group>"; };
 		795F0B951F2256BC00FB95D9 /* PayCardsRecognizer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayCardsRecognizer.framework; path = Source/PayCardsRecognizer.framework; sourceTree = "<group>"; };
+		79972EB11FB322030069ADF3 /* PayCardsRecognizer.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = PayCardsRecognizer.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 		795F0B711F2255F700FB95D9 = {
 			isa = PBXGroup;
 			children = (
+				79972EB11FB322030069ADF3 /* PayCardsRecognizer.podspec */,
 				795F0B7C1F2255F700FB95D9 /* PayCardsRecognizerExample */,
 				795F0B7B1F2255F700FB95D9 /* Products */,
 				795F0B951F2256BC00FB95D9 /* PayCardsRecognizer.framework */,
