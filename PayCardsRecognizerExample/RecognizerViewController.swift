@@ -23,7 +23,7 @@ class NavigationController: UINavigationController {
 extension String {
     
     public func format(_ seprator: String) -> String {
-        let src = characters
+        let src = self
         var dst = [String]()
         var i = 1
         for char in src {
@@ -54,7 +54,8 @@ class RecognizerViewController: UIViewController, PayCardsRecognizerPlatformDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        recognizer = PayCardsRecognizer(delegate: self, resultMode: .async, container: recognizerContainer)
+        recognizer = PayCardsRecognizer(delegate: self, resultMode: .async, container: recognizerContainer, frameColor: .green)
+//        recognizer = PayCardsRecognizer(delegate: self, resultMode: .async, container: recognizerContainer)
     }
     
     override func viewWillAppear(_ animated: Bool) {

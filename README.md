@@ -37,7 +37,7 @@ class RecognizerViewController: UIViewController, PayCardsRecognizerPlatformDele
 	
 	override func viewDidLoad() {
 	    super.viewDidLoad()
-	    recognizer = PayCardsRecognizer(delegate: self, resultMode: .sync, container: self.view)
+	    recognizer = PayCardsRecognizer(delegate: self, resultMode: .sync, container: self.view, frameColor: .green)
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
