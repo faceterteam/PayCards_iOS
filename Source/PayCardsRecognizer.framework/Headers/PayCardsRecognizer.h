@@ -29,7 +29,7 @@ typedef NS_ENUM(NSUInteger, PayCardsRecognizerResultMode) {
     PayCardsRecognizerResultModeSync, // All recognized data will be return at one time.
 };
 
-typedef NS_ENUM(NSUInteger, PayCardsRecognizerDataMode) {
+typedef NS_OPTIONS(NSUInteger, PayCardsRecognizerDataMode) {
     PayCardsRecognizerDataModeNone = 0,
     PayCardsRecognizerDataModeNumber = 1,
     PayCardsRecognizerDataModeDate = 2,
