@@ -149,8 +149,8 @@ or stored on device</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="m7M-1U-9uw">
-                                                <rect key="frame" x="118" y="0.0" width="179" height="60"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="m7M-1U-9uw">
+                                                <rect key="frame" x="118" y="0.0" width="72.5" height="60"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -165,7 +165,7 @@ or stored on device</string>
                                             <constraint firstItem="m7M-1U-9uw" firstAttribute="top" secondItem="l5N-fB-zYX" secondAttribute="top" id="JMI-NP-a7F"/>
                                             <constraint firstItem="m7M-1U-9uw" firstAttribute="leading" secondItem="l5N-fB-zYX" secondAttribute="leading" constant="118" id="LmY-aZ-uQr"/>
                                             <constraint firstAttribute="bottom" secondItem="m7M-1U-9uw" secondAttribute="bottom" id="kSg-yD-OA0"/>
-                                            <constraint firstAttribute="trailing" secondItem="m7M-1U-9uw" secondAttribute="trailing" constant="8" id="oYy-8j-LEm"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m7M-1U-9uw" secondAttribute="trailing" id="oYy-8j-LEm"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mes-YI-1fW">
@@ -177,7 +177,7 @@ or stored on device</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hQd-Xs-4KC">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hQd-Xs-4KC">
                                                 <rect key="frame" x="118" y="0.0" width="179" height="60"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -190,8 +190,8 @@ or stored on device</string>
                                             <constraint firstItem="hQd-Xs-4KC" firstAttribute="top" secondItem="mes-YI-1fW" secondAttribute="top" id="BFh-PM-cm7"/>
                                             <constraint firstAttribute="bottom" secondItem="hQd-Xs-4KC" secondAttribute="bottom" id="Mdy-qc-9wk"/>
                                             <constraint firstAttribute="trailing" secondItem="hQd-Xs-4KC" secondAttribute="trailing" constant="8" id="RuI-7M-1qR"/>
-                                            <constraint firstItem="hQd-Xs-4KC" firstAttribute="leading" secondItem="bZL-Fj-QAK" secondAttribute="trailing" constant="8" id="eLQ-nN-eZg"/>
-                                            <constraint firstItem="hQd-Xs-4KC" firstAttribute="leading" secondItem="mes-YI-1fW" secondAttribute="leading" constant="118" id="evx-gf-aqE"/>
+                                            <constraint firstItem="hQd-Xs-4KC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bZL-Fj-QAK" secondAttribute="trailing" constant="8" symbolic="YES" id="eLQ-nN-eZg"/>
+                                            <constraint firstItem="hQd-Xs-4KC" firstAttribute="leading" secondItem="mes-YI-1fW" secondAttribute="leading" priority="750" constant="118" id="evx-gf-aqE"/>
                                             <constraint firstItem="bZL-Fj-QAK" firstAttribute="leading" secondItem="mes-YI-1fW" secondAttribute="leading" id="m53-o3-JCQ"/>
                                             <constraint firstAttribute="height" constant="60" id="uFt-za-xvT"/>
                                         </constraints>
@@ -200,7 +200,7 @@ or stored on device</string>
                                         <rect key="frame" x="15" y="122" width="305" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9V-4j-CO9">
-                                                <rect key="frame" x="0.0" y="20" width="110" height="21"/>
+                                                <rect key="frame" x="0.0" y="20" width="51.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -218,10 +218,10 @@ or stored on device</string>
                                             <constraint firstAttribute="trailing" secondItem="Z4b-VL-wT3" secondAttribute="trailing" id="5f0-hT-DIZ"/>
                                             <constraint firstItem="P9V-4j-CO9" firstAttribute="leading" secondItem="pkC-0s-b52" secondAttribute="leading" id="7cx-NS-NP6"/>
                                             <constraint firstAttribute="bottom" secondItem="Z4b-VL-wT3" secondAttribute="bottom" id="HhO-AR-j8n"/>
-                                            <constraint firstItem="Z4b-VL-wT3" firstAttribute="leading" secondItem="P9V-4j-CO9" secondAttribute="trailing" constant="8" id="Mop-Pn-SCJ"/>
+                                            <constraint firstItem="Z4b-VL-wT3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="P9V-4j-CO9" secondAttribute="trailing" constant="8" symbolic="YES" id="Mop-Pn-SCJ"/>
                                             <constraint firstItem="P9V-4j-CO9" firstAttribute="centerY" secondItem="pkC-0s-b52" secondAttribute="centerY" id="W4h-0L-bTq"/>
                                             <constraint firstItem="Z4b-VL-wT3" firstAttribute="top" secondItem="pkC-0s-b52" secondAttribute="top" id="Yjy-iu-Fwt"/>
-                                            <constraint firstItem="Z4b-VL-wT3" firstAttribute="leading" secondItem="pkC-0s-b52" secondAttribute="leading" constant="118" id="uvI-mQ-XaC"/>
+                                            <constraint firstItem="Z4b-VL-wT3" firstAttribute="leading" secondItem="pkC-0s-b52" secondAttribute="leading" priority="750" constant="118" id="uvI-mQ-XaC"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a5v-xe-fnw">
@@ -324,14 +324,14 @@ or stored on device</string>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="expireDateTextField" destination="Z4b-VL-wT3" id="JKK-1a-ytP"/>
+                        <outlet property="expirationDateTextField" destination="Z4b-VL-wT3" id="JKK-1a-ytP"/>
                         <outlet property="holderNameTextField" destination="m7M-1U-9uw" id="Qqd-bM-uFG"/>
                         <outlet property="numberTextField" destination="hQd-Xs-4KC" id="SqV-On-XfV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P9Y-vh-RFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2634.375" y="135.21126760563379"/>
+            <point key="canvasLocation" x="2627" y="132"/>
         </scene>
         <!--Complete View Controller-->
         <scene sceneID="CjV-px-pNY">
@@ -373,7 +373,7 @@ or stored on device</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I4k-DA-kye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3480.8000000000002" y="136.28185907046478"/>
+            <point key="canvasLocation" x="3394" y="133"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DwI-eR-cVZ">
@@ -480,7 +480,7 @@ or stored on device</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIR-2W-mMz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1005.6" y="136.28185907046478"/>
+            <point key="canvasLocation" x="949" y="132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W3S-TS-tO7">
@@ -499,7 +499,7 @@ or stored on device</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4zA-OH-yC3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+            <point key="canvasLocation" x="98" y="133"/>
         </scene>
     </scenes>
     <resources>
