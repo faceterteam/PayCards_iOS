@@ -9,31 +9,26 @@
 import UIKit
 import PayCardsRecognizer
 
-class CardDetailsViewController: UIViewController {
+final class CardDetailsViewController: UIViewController {
 
+    // MARK: - Outlets
     @IBOutlet weak var holderNameTextField: UITextField!
-    
     @IBOutlet weak var numberTextField: UITextField!
-    
-    @IBOutlet weak var expireDateTextField: UITextField!
+    @IBOutlet weak var expirationDateTextField: UITextField!
     
     var result: PayCardsRecognizerResult?
     
+    // MARK: - VC Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        holderNameTextField.text = result?.recognizedHolderName
-        numberTextField.text = result?.recognizedNumber?.format(" ")
-        if let month = result?.recognizedExpireDateMonth, let year = result?.recognizedExpireDateYear {
-            expireDateTextField.text = String(format: "%@/%@", month, year)
-        }
+        
+        prepareUI()
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         let name = holderNameTextField.text ?? ""
         let number = numberTextField.text ?? ""
-        let date = expireDateTextField.text ?? ""
+        let date = expirationDateTextField.text ?? ""
         
         let should = !(name.isEmpty || number.isEmpty || date.isEmpty)
         
@@ -43,11 +38,26 @@ class CardDetailsViewController: UIViewController {
         
         return should
     }
+}
+
+extension CardDetailsViewController {
     
-    func presentAlert() {
+    private func presentAlert() {
         let alert = UIAlertController(title: NSLocalizedString("Fill data", comment: ""), message: nil, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK!", comment: ""), style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
-
+    
+    private func prepareUI() {
+        guard let res = result else {
+            return
+        }
+        holderNameTextField.text = res.recognizedHolderName
+        numberTextField.text = res.recognizedNumber?.separate(by: " ")
+        if let month = res.recognizedExpireDateMonth, let year = res.recognizedExpireDateYear {
+            expirationDateTextField.text = String(format: "%@/%@", month, year)
+        }
+    }
+    
 }
+

@@ -16,6 +16,8 @@
 		795F0B941F2256AA00FB95D9 /* RecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795F0B911F2256AA00FB95D9 /* RecognizerViewController.swift */; };
 		7992FA251FB333870064A8C4 /* PayCardsRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7992FA201FB3336B0064A8C4 /* PayCardsRecognizer.framework */; };
 		7992FA261FB333870064A8C4 /* PayCardsRecognizer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7992FA201FB3336B0064A8C4 /* PayCardsRecognizer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4D2D2692085024100FE00A0 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D2D2682085024100FE00A0 /* String+Extensions.swift */; };
+		F4D2D26B208502E600FE00A0 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D2D26A208502E600FE00A0 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +46,8 @@
 		795F0B911F2256AA00FB95D9 /* RecognizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognizerViewController.swift; sourceTree = "<group>"; };
 		7992FA201FB3336B0064A8C4 /* PayCardsRecognizer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayCardsRecognizer.framework; path = Source/PayCardsRecognizer.framework; sourceTree = "<group>"; };
 		79972EB11FB322030069ADF3 /* PayCardsRecognizer.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = PayCardsRecognizer.podspec; sourceTree = "<group>"; };
+		F4D2D2682085024100FE00A0 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		F4D2D26A208502E600FE00A0 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				795F0B7D1F2255F700FB95D9 /* AppDelegate.swift */,
+				F4D2D26A208502E600FE00A0 /* NavigationController.swift */,
+				795F0B911F2256AA00FB95D9 /* RecognizerViewController.swift */,
 				795F0B8F1F2256AA00FB95D9 /* CardDetailsViewController.swift */,
 				795F0B901F2256AA00FB95D9 /* CompleteViewController.swift */,
-				795F0B911F2256AA00FB95D9 /* RecognizerViewController.swift */,
+				F4D2D2682085024100FE00A0 /* String+Extensions.swift */,
 				795F0B811F2255F700FB95D9 /* Main.storyboard */,
 				795F0B841F2255F700FB95D9 /* Assets.xcassets */,
 				795F0B861F2255F700FB95D9 /* LaunchScreen.storyboard */,
@@ -125,7 +131,7 @@
 				TargetAttributes = {
 					795F0B791F2255F700FB95D9 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 7F9FM9B29E;
+						DevelopmentTeam = GX63CF22T7;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
@@ -184,6 +190,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4D2D2692085024100FE00A0 /* String+Extensions.swift in Sources */,
+				F4D2D26B208502E600FE00A0 /* NavigationController.swift in Sources */,
 				795F0B941F2256AA00FB95D9 /* RecognizerViewController.swift in Sources */,
 				795F0B7E1F2255F700FB95D9 /* AppDelegate.swift in Sources */,
 				795F0B921F2256AA00FB95D9 /* CardDetailsViewController.swift in Sources */,
@@ -324,7 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7F9FM9B29E;
+				DEVELOPMENT_TEAM = GX63CF22T7;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -345,7 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7F9FM9B29E;
+				DEVELOPMENT_TEAM = GX63CF22T7;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

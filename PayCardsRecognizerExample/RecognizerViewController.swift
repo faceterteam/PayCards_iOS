@@ -7,41 +7,11 @@
 //
 
 import UIKit
-
 import PayCardsRecognizer
 
-class NavigationController: UINavigationController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        navigationBar.setBackgroundImage(#imageLiteral(resourceName: "Transparent"), for: .default)
-        navigationBar.shadowImage = UIImage()
-        navigationBar.backgroundColor = .white
-    }
-}
-
-extension String {
+final class RecognizerViewController: UIViewController {
     
-    public func format(_ seprator: String) -> String {
-        let src = self
-        var dst = [String]()
-        var i = 1
-        for char in src {
-            let mod = i % 4
-            dst.append(String(char))
-            if mod == 0 {
-                dst.append(seprator)
-            }
-            i += 1
-        }
-        return dst.joined(separator: "")
-    }
-    
-}
-
-class RecognizerViewController: UIViewController, PayCardsRecognizerPlatformDelegate {
-    
-    var recognizer: PayCardsRecognizer!
+    private var recognizer: PayCardsRecognizer!
     
     @IBOutlet weak var recognizerContainer: UIView!
     
@@ -52,6 +22,8 @@ class RecognizerViewController: UIViewController, PayCardsRecognizerPlatformDele
         return item
     }()
     
+    // MARK: - VC Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         recognizer = PayCardsRecognizer(delegate: self, resultMode: .async, container: recognizerContainer, frameColor: .green)
@@ -59,22 +31,42 @@ class RecognizerViewController: UIViewController, PayCardsRecognizerPlatformDele
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        recognizer.startCamera()
+        startCapturing()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
-        recognizer.stopCamera()
+        stopCapturing()
         navigationItem.rightBarButtonItem = nil
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? CardDetailsViewController {
+            vc.result = sender as? PayCardsRecognizerResult
+        }
+    }
+    
+}
+
+// MARK: - Camera capturing
+extension RecognizerViewController {
+    private func startCapturing() {
+        recognizer.startCamera()
+    }
+    
+    private func stopCapturing() {
+        recognizer.stopCamera()
+    }
+}
+
+// MARK: - PayCardsRecognizerPlatformDelegate
+extension RecognizerViewController: PayCardsRecognizerPlatformDelegate {
     func payCardsRecognizer(_ payCardsRecognizer: PayCardsRecognizer, didRecognize result: PayCardsRecognizerResult) {
-        
-        print(result)
-        print(result.dictionary as NSDictionary)
-        
+        #if DEBUG
+            print(result)
+            print(result.dictionary as NSDictionary)
+        #endif
         
         if result.isCompleted {
             performSegue(withIdentifier: "CardDetailsViewController", sender: result)
@@ -82,23 +74,6 @@ class RecognizerViewController: UIViewController, PayCardsRecognizerPlatformDele
             navigationItem.rightBarButtonItem = activityView
         }
     }
-    
-    @IBAction func start() {
-        recognizer.startCamera()
-    }
-    
-    @IBAction func stop() {
-        recognizer.stopCamera()
-    }
-    
-    @IBAction func restart() {
-        recognizer.resumeRecognizer()
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! CardDetailsViewController
-        vc.result = sender as? PayCardsRecognizerResult
-    }
-
 }
+
 
