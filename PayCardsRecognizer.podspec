@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = 'PayCardsRecognizer'
-  spec.version          = '1.1.4'
+  spec.version          = '1.1.5'
   spec.license          = { type: 'MIT', file: 'LICENSE.md' }
   spec.homepage         = 'https://pay.cards'
   spec.authors          = { 'PAY.CARDS' => 'support@pay.cards' }
