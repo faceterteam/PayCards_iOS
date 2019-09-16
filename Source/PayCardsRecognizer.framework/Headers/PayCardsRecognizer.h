@@ -47,6 +47,8 @@ typedef NS_OPTIONS(NSUInteger, PayCardsRecognizerDataMode) {
 
 @property (nonatomic, weak, nullable) id<PayCardsRecognizerPlatformDelegate> delegate;
 
+@property (nonatomic) int bytesPerRow;
+
 - (void)startCamera;
 
 - (void)startCameraWithOrientation:(UIInterfaceOrientation)orientation;
