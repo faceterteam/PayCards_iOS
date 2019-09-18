@@ -1,15 +1,6 @@
 PAY.CARDS RECOGNIZER
 ===================
 
-Source Code: [iOS](https://github.com/faceterteam/PayCards_iOS_Source), [C++](https://github.com/faceterteam/PayCards_Source)
-
-[iOS SDK](https://github.com/faceterteam/PayCards_iOS)
-
-Sample app
-----------
-
-See PayCardsRecognizerExample project
-
 Installation
 ------------
 
@@ -19,13 +10,7 @@ Installation
 pod 'PayCardsRecognizer'
 ```
 
-##### If you don't use CocoaPods:
-
-1. Download the latest version of the SDK (PayCardsRecognizer.framework).
-2. Add the PayCardsRecognizer.framework to your Xcode project.
-3. Add the PayCardsRecognizer.framework to Embedded Binaries.
-
-Usage
+Basic Usage
 ------------
 
 ```swift
