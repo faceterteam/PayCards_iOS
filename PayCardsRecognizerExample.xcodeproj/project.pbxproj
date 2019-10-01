@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35CA48E3F23F9CA2A33683A7 /* Pods_PayCardsRecognizerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67CAD060AECDA1264335B16 /* Pods_PayCardsRecognizerExample.framework */; };
 		795F0B7E1F2255F700FB95D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795F0B7D1F2255F700FB95D9 /* AppDelegate.swift */; };
 		795F0B831F2255F700FB95D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795F0B811F2255F700FB95D9 /* Main.storyboard */; };
 		795F0B851F2255F700FB95D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795F0B841F2255F700FB95D9 /* Assets.xcassets */; };
@@ -14,20 +15,17 @@
 		795F0B921F2256AA00FB95D9 /* CardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795F0B8F1F2256AA00FB95D9 /* CardDetailsViewController.swift */; };
 		795F0B931F2256AA00FB95D9 /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795F0B901F2256AA00FB95D9 /* CompleteViewController.swift */; };
 		795F0B941F2256AA00FB95D9 /* RecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795F0B911F2256AA00FB95D9 /* RecognizerViewController.swift */; };
-		7992FA251FB333870064A8C4 /* PayCardsRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7992FA201FB3336B0064A8C4 /* PayCardsRecognizer.framework */; };
-		7992FA261FB333870064A8C4 /* PayCardsRecognizer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7992FA201FB3336B0064A8C4 /* PayCardsRecognizer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4D2D2692085024100FE00A0 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D2D2682085024100FE00A0 /* String+Extensions.swift */; };
 		F4D2D26B208502E600FE00A0 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D2D26A208502E600FE00A0 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7992FA271FB333870064A8C4 /* Embed Frameworks */ = {
+		792B084F23436941004B484C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7992FA261FB333870064A8C4 /* PayCardsRecognizer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		55A23EDAB45DC1E2EF5F7FAB /* Pods-PayCardsRecognizerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayCardsRecognizerExample.debug.xcconfig"; path = "Target Support Files/Pods-PayCardsRecognizerExample/Pods-PayCardsRecognizerExample.debug.xcconfig"; sourceTree = "<group>"; };
 		795F0B7A1F2255F700FB95D9 /* PayCardsRecognizerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayCardsRecognizerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		795F0B7D1F2255F700FB95D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		795F0B821F2255F700FB95D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,8 +43,9 @@
 		795F0B8F1F2256AA00FB95D9 /* CardDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailsViewController.swift; sourceTree = "<group>"; };
 		795F0B901F2256AA00FB95D9 /* CompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
 		795F0B911F2256AA00FB95D9 /* RecognizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognizerViewController.swift; sourceTree = "<group>"; };
-		7992FA201FB3336B0064A8C4 /* PayCardsRecognizer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayCardsRecognizer.framework; path = Source/PayCardsRecognizer.framework; sourceTree = "<group>"; };
 		79972EB11FB322030069ADF3 /* PayCardsRecognizer.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = PayCardsRecognizer.podspec; sourceTree = "<group>"; };
+		B67CAD060AECDA1264335B16 /* Pods_PayCardsRecognizerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayCardsRecognizerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC052E4CF2EA7AEC08764062 /* Pods-PayCardsRecognizerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayCardsRecognizerExample.release.xcconfig"; path = "Target Support Files/Pods-PayCardsRecognizerExample/Pods-PayCardsRecognizerExample.release.xcconfig"; sourceTree = "<group>"; };
 		F4D2D2682085024100FE00A0 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		F4D2D26A208502E600FE00A0 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7992FA251FB333870064A8C4 /* PayCardsRecognizer.framework in Frameworks */,
+				35CA48E3F23F9CA2A33683A7 /* Pods_PayCardsRecognizerExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +68,8 @@
 				79972EB11FB322030069ADF3 /* PayCardsRecognizer.podspec */,
 				795F0B7C1F2255F700FB95D9 /* PayCardsRecognizerExample */,
 				795F0B7B1F2255F700FB95D9 /* Products */,
-				7992FA201FB3336B0064A8C4 /* PayCardsRecognizer.framework */,
+				EA9DE21229BAB5230D997192 /* Pods */,
+				F0EBE8CB86FCEDCC135894C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +98,24 @@
 			path = PayCardsRecognizerExample;
 			sourceTree = "<group>";
 		};
+		EA9DE21229BAB5230D997192 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55A23EDAB45DC1E2EF5F7FAB /* Pods-PayCardsRecognizerExample.debug.xcconfig */,
+				EC052E4CF2EA7AEC08764062 /* Pods-PayCardsRecognizerExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F0EBE8CB86FCEDCC135894C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B67CAD060AECDA1264335B16 /* Pods_PayCardsRecognizerExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,10 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 795F0B8C1F2255F700FB95D9 /* Build configuration list for PBXNativeTarget "PayCardsRecognizerExample" */;
 			buildPhases = (
+				2535B2123F790DCC53446FB9 /* [CP] Check Pods Manifest.lock */,
 				795F0B761F2255F700FB95D9 /* Sources */,
 				795F0B771F2255F700FB95D9 /* Frameworks */,
 				795F0B781F2255F700FB95D9 /* Resources */,
-				7992FA271FB333870064A8C4 /* Embed Frameworks */,
+				792B084F23436941004B484C /* Embed Frameworks */,
+				025CFEE5F615C354799999F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +187,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		025CFEE5F615C354799999F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayCardsRecognizerExample/Pods-PayCardsRecognizerExample-frameworks.sh",
+				"${PODS_ROOT}/PayCardsRecognizer/Source/PayCardsRecognizer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PayCardsRecognizer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayCardsRecognizerExample/Pods-PayCardsRecognizerExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2535B2123F790DCC53446FB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PayCardsRecognizerExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		795F0B761F2255F700FB95D9 /* Sources */ = {
@@ -318,15 +382,13 @@
 		};
 		795F0B8D1F2255F700FB95D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55A23EDAB45DC1E2EF5F7FAB /* Pods-PayCardsRecognizerExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 3R68P2RPLF;
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Source",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = PayCardsRecognizerExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -340,15 +402,13 @@
 		};
 		795F0B8E1F2255F700FB95D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC052E4CF2EA7AEC08764062 /* Pods-PayCardsRecognizerExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 3R68P2RPLF;
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Source",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = PayCardsRecognizerExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

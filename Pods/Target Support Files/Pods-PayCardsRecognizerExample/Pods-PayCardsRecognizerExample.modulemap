@@ -1,0 +1,6 @@
+framework module Pods_PayCardsRecognizerExample {
+  umbrella header "Pods-PayCardsRecognizerExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
