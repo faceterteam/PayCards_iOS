@@ -68,3 +68,6 @@ fastlane/test_output
 
 .DS_Store
 *.DS_Store
+
+#Vim specific
+*.swp
